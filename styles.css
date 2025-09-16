@@ -1,0 +1,62 @@
+/* Minimal, moderne stil uten byggesteg. */
+:root{
+  --bg:#0b1020;
+  --card:#121833;
+  --text:#e6eaf6;
+  --muted:#9aa3bd;
+  --brand:#5b8cff;
+  --brand-2:#7ef0ff;
+  --border: #263056;
+  --radius: 16px;
+  --max: 1080px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(126,240,255,.15), transparent 40%),
+              radial-gradient(1000px 500px at 120% 0%, rgba(91,140,255,.12), transparent 30%),
+              var(--bg);
+  color: var(--text);
+  line-height:1.6;
+}
+
+.container{max-width:var(--max);margin:0 auto;padding:24px}
+
+.site-header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:saturate(150%) blur(12px);border-bottom:1px solid var(--border);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);font-weight:700;font-size:1.1rem}
+.brand .logo{width:28px;height:28px}
+.logo.sm{width:20px;height:20px}
+
+.links a{color:var(--text);opacity:.9;text-decoration:none;margin-left:16px}
+.links a[aria-current="page"]{border-bottom:2px solid var(--brand);padding-bottom:6px}
+
+.hero{padding:64px 24px 24px}
+.hero h1{font-size:clamp(2rem, 4vw, 3rem);line-height:1.1;margin:0 0 12px}
+.brand-accent{background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:60ch;margin-bottom:24px}
+
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 16px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b1020;font-weight:700;text-decoration:none;border:1px solid #6aa0ff}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--border)}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0 56px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.card h2{margin-top:0}
+.arrow{display:inline-flex;align-items:center;gap:8px;color:var(--brand);text-decoration:none}
+.arrow::after{content:"→"}
+
+.site-footer{border-top:1px solid var(--border);margin-top:32px}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-links a{color:var(--muted);text-decoration:none;margin-left:16px}
+
+.page{padding:32px 24px}
+.page h1{margin-top:0}
+.longform .card{margin-bottom:16px}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+
+details{background:rgba(255,255,255,.03);padding:12px 16px;border-radius:12px;border:1px solid var(--border);margin:8px 0}
+summary{cursor:pointer;font-weight:600}
