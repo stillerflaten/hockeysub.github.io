@@ -78,7 +78,6 @@ p{margin:0 0 1em}
 .links a:hover{color:var(--text);background:var(--bg-tint)}
 .links a[aria-current="page"]{color:var(--accent-strong);background:var(--bg-tint)}
 @media (prefers-color-scheme: dark){ .links a[aria-current="page"]{color:var(--accent)} }
-@media (max-width:560px){ .links .hide-sm{display:none} }
 
 /* ---------- Knapper ---------- */
 .btn{
