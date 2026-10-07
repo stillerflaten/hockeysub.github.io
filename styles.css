@@ -250,7 +250,8 @@ details p{margin:10px 0 0;color:var(--muted)}
 .site-footer .muted{margin:6px 0 0;font-size:.9rem}
 
 @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto!important;transition:none!important} }
-.contact-card > div:last-child{flex:1;min-width:220px}
+.contact-card > div:not(.icon-badge){flex:1;min-width:220px}
+.contact-card > .btn{flex:none}
 
 /* Språkvalg NO/EN i topplinjen */
 .links a.lang{border:1px solid var(--border);color:var(--text);font-weight:600;font-size:.85rem;margin-left:4px}
