@@ -3,126 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personvernerklæring – HockeySub</title>
-  <meta name="description" content="Personvernerklæring for HockeySub. Les hvilke data vi behandler og dine rettigheter.">
-  <link rel="icon" href="favicon.png">
+  <title>Personvern – HockeySub</title>
+  <meta name="description" content="Personvernerklæring for HockeySub. Appen har ingen konto, ingen reklame og ingen sporing, og alt lagres på telefonen din.">
+  <meta name="theme-color" content="#0C4A68">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#innhold">Hopp til innholdet</a>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="HockeySub logo" class="logo">
+        <img src="logo.svg" alt="" width="32" height="32">
         <span>HockeySub</span>
       </a>
-      <nav class="links">
+      <nav class="links" aria-label="Hovedmeny">
+        <a class="hide-sm" href="index.html#funksjoner">Funksjoner</a>
         <a href="support.html">Support</a>
         <a href="privacy.html" aria-current="page">Personvern</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page longform">
-  <h1>Personvernerklæring for HockeySub</h1>
-  <p class="muted">Ikrafttredelsesdato: 16. september 2025</p>
+  <section class="page-hero">
+    <div class="container longform">
+      <h1>Personvernerklæring</h1>
+      <p>Kort fortalt: HockeySub har ingen konto, ingen reklame og ingen sporing. Alt du legger inn blir på telefonen din.</p>
+    </div>
+  </section>
 
-  <div class="card">
-    <h2>Oversikt</h2>
-    <p>HockeySub kjører utelukkende på enheten din. Ingen kontoer, ingen annonser og ingen innebygd analyse. Appen sender ikke data til våre servere, fordi vi ikke driver noen servere.</p>
-  </div>
+  <main id="innhold" class="container page longform">
+    <p class="muted">Sist oppdatert 7. oktober 2026</p>
 
-  <div class="card">
-    <h2>Data appen lagrer på enheten</h2>
-    <ol>
-      <li>Lag- og spillerdata: spillernavn, valgfrie roller (inkludert målvakt) og interne identifikatorer.</li>
-      <li>Kampdata: aktiv/benk/ute-av-kamp-status, spilletid per spiller, mål, motstanderens navn, kampens varighet og tid, samt lagret kamphistorikk.</li>
-      <li>Appinnstillinger: byttegruppe, byttelengde, fast målvakt-modus og lignende preferanser.</li>
-      <li>Haptikk og UI-tilstand: brukes kun for tilbakemelding og visuelle effekter på enheten.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Oversikt</h2>
+      <p>HockeySub kjører på iPhonen din. Appen har ingen innlogging, ingen annonser og ingen analyseverktøy, og den sender ikke data til oss. Vi har ingen servere som tar imot data fra appen.</p>
+    </div>
 
-  <div class="card">
-    <h2>Hva appen ikke har tilgang til</h2>
-    <ol>
-      <li>Ingen posisjon, kontakter, kalender, bilder, Bluetooth, mikrofon eller kamera.</li>
-      <li>Ingen tredjeparts annonserings- eller sporingsverktøy (SDK-er).</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Hva appen lagrer på telefonen</h2>
+      <ul>
+        <li><strong>Lag og spillere:</strong> lagnavn, spillernavn, valgfritt draktnummer, hvem som er keeper og hvem som er til stede.</li>
+        <li><strong>Kamper:</strong> motstander, dato, resultat, mål, spilletid per spiller og hvem som var på isen og på benken.</li>
+        <li><strong>Innstillinger:</strong> kampoppsett, klasse, byttetid og valg som lyd og rettferdig rotasjon.</li>
+      </ul>
+      <p style="margin-top:12px">Dataene brukes bare til å vise og regne ut det du ser i appen.</p>
+    </div>
 
-  <div class="card">
-    <h2>Valgfrie systemtjenester</h2>
-    <ol>
-      <li>Enhets-/iCloud-sikkerhetskopi: hvis du bruker iOS-systemets sikkerhetskopi, kan appdata bli inkludert i krypterte enhets- eller iCloud-kopier som håndteres av Apple.</li>
-      <li>Krasjlogger og diagnostikk: hvis du velger å dele analyser med utviklere på OS-nivå, kan Apple gi aggregerte, avidentifiserte diagnostikkdata.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Tillatelser appen bruker</h2>
+      <ul>
+        <li><strong>Varsler:</strong> brukes bare til å si fra lokalt på telefonen når det er tid for bytte. Varslene lages på telefonen og sendes ikke via oss.</li>
+        <li><strong>Live Activities:</strong> viser klokka og neste bytte på låseskjermen og i Dynamic Island mens kampen pågår.</li>
+      </ul>
+      <p style="margin-top:12px">Appen bruker ikke posisjon, kontakter, kalender, bilder, kamera, mikrofon eller Bluetooth.</p>
+    </div>
 
-  <div class="card">
-    <h2>Formål og behandlingsgrunnlag (GDPR)</h2>
-    <ol>
-      <li>Levere kjernefunksjonalitet du ber om (oppfyllelse av en avtale).</li>
-      <li>Berettiget interesse i å vedlikeholde og forbedre appen, kun med avidentifiserte diagnostikkdata hvis du velger dette via Apple.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Når du deler noe</h2>
+      <p>Data forlater bare telefonen når du selv velger å dele, for eksempel:</p>
+      <ul>
+        <li>en kamprapport eller sesongstatistikk som PDF</li>
+        <li>en lagfil (.hockeysub) til en medtrener, med spillerstall, arkiv og kampoppsett</li>
+      </ul>
+      <p style="margin-top:12px">Du velger selv mottaker og måte (AirDrop, Meldinger, e-post og lignende). Da gjelder vilkårene til tjenesten du bruker. Vi ser ikke hva som deles.</p>
+    </div>
 
-  <div class="card">
-    <h2>Datadeling og overføringer</h2>
-    <ol>
-      <li>Vi selger eller deler ikke data med tredjeparter.</li>
-      <li>Vi overfører ikke data internasjonalt; eventuelle sikkerhetskopier eller diagnostikk håndteres av Apple i henhold til deres vilkår.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Tjenester fra Apple</h2>
+      <ul>
+        <li><strong>Sikkerhetskopi:</strong> bruker du iCloud- eller datamaskinsikkerhetskopi, kan appens data være med i kopien. Den håndteres av Apple.</li>
+        <li><strong>Krasjrapporter:</strong> har du valgt å dele analyse med apputviklere i iOS-innstillingene, kan Apple gi oss anonyme krasjrapporter. De brukes bare til å rette feil.</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Lagring</h2>
-    <ol>
-      <li>Data forblir på enheten din til du sletter eller avinstallerer appen.</li>
-      <li>Du kan fjerne lag, kamphistorikk og innstillinger fra appen der det støttes, eller avinstallere appen for å fjerne alle lokale data.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Lenker</h2>
+      <p>Appen har lenker til offisielle dokumenter fra Norges Ishockeyforbund. De åpnes i nettleseren, og da gjelder personvernreglene til det nettstedet.</p>
+    </div>
 
-  <div class="card">
-    <h2>Dine rettigheter</h2>
-    <ol>
-      <li>Innsyn og retting: rediger eller oppdater lag og innstillinger direkte i appen.</li>
-      <li>Sletting: slett lagrede kamper eller lag i appen der dette er mulig, eller avinstaller appen for å fjerne all lokal data.</li>
-      <li>Brukere i EU/EØS kan kontakte oss for å utøve ytterligere rettigheter under GDPR.</li>
-    </ol>
-  </div>
+    <div class="card">
+      <h2>Barn og unge</h2>
+      <p>Appen er laget for trenere, ikke for barna selv. Som trener legger du inn navn på spillere. Legg bare inn det laget trenger, for eksempel fornavn, og følg klubbens retningslinjer for personvern. Ingen av opplysningene sendes til oss.</p>
+    </div>
 
-  <div class="card">
-    <h2>Barns personvern</h2>
-    <p>Appen er ikke rettet mot barn under 13 år. Hvis du administrerer ungdomslag, må du kun legge inn informasjon du har rett til å behandle, og innhente nødvendige samtykker fra foresatte.</p>
-  </div>
+    <div class="card">
+      <h2>Lagring og sletting</h2>
+      <p>Dataene ligger på telefonen til du sletter dem. Du kan slette spillere, kamper og lag i appen. Sletter du appen, forsvinner alle data fra telefonen.</p>
+    </div>
 
-  <div class="card">
-    <h2>Sikkerhet</h2>
-    <p>Data lagres lokalt og beskyttes av iOS sine sikkerhetsmekanismer. Vi oppbevarer ikke eksterne kopier.</p>
-  </div>
+    <div class="card">
+      <h2>Dine rettigheter</h2>
+      <p>Siden vi ikke har tilgang til dataene dine, har du full kontroll selv: du kan se, rette og slette alt i appen. Har du spørsmål om personvern, kan du kontakte oss.</p>
+    </div>
 
-  <div class="card">
-    <h2>Endringer i denne erklæringen</h2>
-    <p>Vi kan oppdatere denne erklæringen når appen utvikles. Videre bruk etter endringer innebærer aksept av oppdatert erklæring.</p>
-  </div>
+    <div class="card">
+      <h2>Endringer</h2>
+      <p>Hvis appen endres på en måte som påvirker personvernet, oppdaterer vi denne siden og datoen øverst.</p>
+    </div>
 
-  <div class="card">
-    <h2>Kontakt</h2>
-    <p>For spørsmål eller henvendelser om personvern, kontakt: <br>
-    <strong>Silje L. Tillerflaten</strong><br>
-    <a class="themed-link" href="mailto:stillerflaten@icloud.com">stillerflaten@icloud.com</a></p>
-  </div>
-
-  <p class="muted small">Dette er ikke juridisk rådgivning.</p>
-</main>
-
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>Silje L. Tillerflaten<br>
+      <a href="mailto:stillerflaten@icloud.com?subject=Personvern%20HockeySub">stillerflaten@icloud.com</a></p>
+    </div>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="brand-inline"><img src="logo.png" alt="" class="logo sm"><strong>HockeySub</strong></div>
-      <nav class="footer-links">
+      <div>
+        <div class="footer-brand"><img src="logo.svg" alt="" width="24" height="24">HockeySub</div>
+        <p class="muted">© 2026 Silje L. Tillerflaten</p>
+      </div>
+      <nav class="footer-links" aria-label="Bunnmeny">
+        <a href="index.html">Forside</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html" aria-current="page">Personvern</a>
-        <a href="mailto:privacy@dittdomene.no">Kontakt oss</a>
+        <a href="mailto:stillerflaten@icloud.com">Kontakt</a>
       </nav>
     </div>
   </footer>

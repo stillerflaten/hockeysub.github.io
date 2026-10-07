@@ -3,52 +3,200 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HockeySub – Enkel og moderne</title>
-  <meta name="description" content="Hockeysub – Offisiell nettside med støtte og personvernerklæring.">
-  <meta property="og:title" content="HockeySub">
-  <meta property="og:description" content="Offisiell nettside for HockeySub. Få hjelp eller les personvernerklæringen.">
+  <title>HockeySub – bytter og lik istid i barnehockey</title>
+  <meta name="description" content="HockeySub er en iPhone-app for trenere i barnehockey. Appen sier fra når det er tid for bytte, viser hvem som skal inn og ut, og holder styr på spilletiden så alle får like mye istid.">
+  <meta name="theme-color" content="#0C4A68">
+  <meta property="og:title" content="HockeySub – lik istid for alle">
+  <meta property="og:description" content="Bytteklokke, spilletid og kamparkiv for trenere i barnehockey. Ingen konto, ingen reklame.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="favicon.png">
+  <meta property="og:url" content="https://hockeysub.github.io/">
+  <meta property="og:image" content="https://hockeysub.github.io/og-bilde.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#innhold">Hopp til innholdet</a>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="HockeySub logo" class="logo">
+        <img src="logo.svg" alt="" width="32" height="32">
         <span>HockeySub</span>
       </a>
-      <nav class="links">
+      <nav class="links" aria-label="Hovedmeny">
+        <a class="hide-sm" href="#funksjoner">Funksjoner</a>
+        <a class="hide-sm" href="#skjermbilder">Skjermbilder</a>
         <a href="support.html">Support</a>
         <a href="privacy.html">Personvern</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero container">
-      <h1>Velkommen til <span class="brand-accent">HockeySub</span></h1>
-      <p>Dette er den offisielle nettsiden for appen. Her finner du supportinformasjon og vår personvernerklæring.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://apps.apple.com/today" target="_blank" rel="noopener">Last ned på App Store</a>
-        <a class="btn secondary" href="support.html">Få hjelp</a>
+  <main id="innhold">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <img class="hero-icon" src="logo.svg" alt="HockeySub-ikonet" width="84" height="84">
+          <span class="eyebrow">For trenere i barnehockey</span>
+          <h1>Lik istid for alle.</h1>
+          <p class="lead">HockeySub sier fra når det er tid for bytte, viser hvem som skal inn og ut, og holder styr på spilletiden. Da kan du følge med på kampen i stedet for klokka.</p>
+          <div class="cta-row">
+            <!-- Når appen er publisert: bytt span-en under med
+                 <a class="btn" href="https://apps.apple.com/no/app/hockeysub/idXXXXXXXXXX">Last ned på App Store</a> -->
+            <span class="btn" aria-disabled="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg>
+              Kommer snart på App Store
+            </span>
+            <a class="btn ghost" href="#funksjoner">Se hva appen gjør</a>
+          </div>
+          <p class="hero-note">For iPhone. Uten konto og uten reklame.</p>
+        </div>
+        <div class="hero-phone">
+          <div class="phone">
+            <div class="screen">
+              <img src="bilder/skjermbilder/web/02-kamp.webp" width="660" height="1434" alt="HockeySub under kampen: klokke, score, hvem som skal ut og inn, og spilletid for hver spiller">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container features">
-      <div class="card">
-        <h2>Rask støtte</h2>
-        <p>Kontakt oss på e‑post og få hjelp med det du trenger.</p>
-        <a class="arrow" href="support.html">Gå til support</a>
+    <!-- ===== Funksjoner ===== -->
+    <section class="section" id="funksjoner">
+      <div class="container">
+        <div class="section-head">
+          <h2>Alt du trenger på benken</h2>
+          <p>Laget for treneren som står med spillerne, ikke med et regneark.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M10 2h4M12 2v3"/></svg></div>
+            <h3>Bytteklokke</h3>
+            <p>Appen sier fra med vibrasjon og lyd når skiftet er over, og viser hvem som skal inn og hvem som skal ut.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.8 5.5 5.8"/></svg></div>
+            <h3>Lik istid</h3>
+            <p>Spilletiden telles for hver spiller, og rettferdig rotasjon sørger for at alle får omtrent like mye tid på isen.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M9 12h6"/></svg></div>
+            <h3>«Bytt nå» fra låseskjermen</h3>
+            <p>Klokka og neste bytte vises på låseskjermen og i Dynamic Island, så du slipper å låse opp telefonen.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3h6v2H9zM9 10h6M9 14h6M9 18h3"/></svg></div>
+            <h3>NIHF-oppsett</h3>
+            <p>Velg klasse fra U7 til U13, så fylles antall spillere, kamplengde og byttetid inn etter kampreglementet til Norges Ishockeyforbund. Du kan endre alt etterpå.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg></div>
+            <h3>Du bestemmer</h3>
+            <p>Trykk på en spiller for å velge hvem som byttes neste gang. Skadet spiller? Bytt inn fra benken med ett trykk.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-7M21 20H3"/></svg></div>
+            <h3>Arkiv og sesongstatistikk</h3>
+            <p>Alle kamper lagres med resultat og spilletid. Se snittet per spiller over hele sesongen, og rett opp en kamp i etterkant.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 7l4-4 4 4M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></div>
+            <h3>Del som PDF</h3>
+            <p>Lag en ryddig kamprapport av én eller flere kamper, og send den til foreldre eller klubben.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.6 3.1-6.5 7-6.5s7 2.9 7 6.5M19 8v6M16 11h6"/></svg></div>
+            <h3>Flere lag og medtrener</h3>
+            <p>Ha flere lag i samme app, og del laget med en medtrener via AirDrop, Meldinger eller e-post.</p>
+          </article>
+        </div>
       </div>
-      <div class="card">
-        <h2>Personvern først</h2>
-        <p>Vi samler bare inn det som er nødvendig. Les hva og hvorfor i erklæringen.</p>
-        <a class="arrow" href="privacy.html">Les personvernerklæringen</a>
+    </section>
+
+    <!-- ===== Slik fungerer det ===== -->
+    <section class="section tint" id="slik">
+      <div class="container">
+        <div class="section-head">
+          <h2>Klar på et minutt</h2>
+          <p>Tre steg fra du laster ned appen til første bytte.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Legg inn spillerne</h3>
+            <p>Skriv inn navnene, gjerne med draktnummer, og velg hvem som er keeper.</p>
+          </div>
+          <div class="step">
+            <h3>Velg klasse og hvem som er med</h3>
+            <p>Reglene fylles inn for klassen. Huk av hvem som er til stede i dag.</p>
+          </div>
+          <div class="step">
+            <h3>Start kampen</h3>
+            <p>Når appen sier fra, trykker du «Bytt nå». Etter kampen ligger alt i Arkiv.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>Enkel å bruke</h2>
-        <p>Hold styr på spillerstallen, bytter og spilletid</p>
+    </section>
+
+    <!-- ===== Skjermbilder ===== -->
+    <section class="section" id="skjermbilder">
+      <div class="container">
+        <div class="section-head">
+          <h2>Se appen</h2>
+          <p>Rolige farger, store knapper og bare det du trenger under kampen. Bla sideveis for å se flere.</p>
+        </div>
+      </div>
+      <div class="gallery" tabindex="0" aria-label="Skjermbilder fra appen">
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/01-oppsett.webp" width="660" height="1434" loading="lazy" alt="Oppsett-skjermen med neste kamp, kampoppsett og spillerstall"></div></div>
+          <figcaption>Oppsett<span>Lag, klasse og hvem som er med</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/02-kamp.webp" width="660" height="1434" loading="lazy" alt="Kampskjermen med klokke, score og spillere på isen og benken"></div></div>
+          <figcaption>Under kampen<span>Klokke, score og spilletid</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/03-bytt-na.webp" width="660" height="1434" loading="lazy" alt="Varselet «Tid for bytte!» med knappen «Bytt nå» og hvem som skal ut og inn"></div></div>
+          <figcaption>Tid for bytte<span>Hvem skal inn og ut</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/09-laaseskjerm.webp" width="660" height="1434" loading="lazy" alt="Låseskjermen med neste bytte og knappen «Bytt nå»"></div></div>
+          <figcaption>Låseskjermen<span>Bytt uten å låse opp</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/07-kampoppsett.webp" width="660" height="1434" loading="lazy" alt="Kampoppsett med klasse U7–U9, kampregler og innstillinger for bytter"></div></div>
+          <figcaption>Kampoppsett<span>NIHF-regler for klassen</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/04-arkiv.webp" width="660" height="1434" loading="lazy" alt="Arkiv med sesongens kamper og resultater"></div></div>
+          <figcaption>Arkiv<span>Alle kampene samlet</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/05-kampdetaljer.webp" width="660" height="1434" loading="lazy" alt="Kampdetaljer med resultat og spilletid per spiller"></div></div>
+          <figcaption>Kampdetaljer<span>Spilletid for hver spiller</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><div class="screen"><img src="bilder/skjermbilder/web/06-sesongstatistikk.webp" width="660" height="1434" loading="lazy" alt="Sesongstatistikk med spilletid per spiller over alle kamper"></div></div>
+          <figcaption>Sesongstatistikk<span>Spilletid over hele sesongen</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Personvern ===== -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="trust">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div>
+            <h2>Spillerne dine blir på telefonen din</h2>
+            <p>Ingen konto, ingen reklame og ingen sporing. Alt du legger inn lagres bare på din iPhone, og deles bare når du selv velger det.</p>
+          </div>
+          <a class="btn" href="privacy.html">Les om personvern</a>
+        </div>
       </div>
     </section>
   </main>
@@ -56,16 +204,13 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <div class="brand-inline">
-          <img src="logo.png" alt="HockeySub logo" class="logo sm">
-          <strong>HockeySub</strong>
-        </div>
-        <p class="muted">© 2025 Silje L. Tillerflaten.</p>
+        <div class="footer-brand"><img src="logo.svg" alt="" width="24" height="24">HockeySub</div>
+        <p class="muted">© 2026 Silje L. Tillerflaten</p>
       </div>
-      <nav class="footer-links">
+      <nav class="footer-links" aria-label="Bunnmeny">
         <a href="support.html">Support</a>
         <a href="privacy.html">Personvern</a>
-        <a href="mailto:stillerflaten@icloud.com">Kontakt oss</a>
+        <a href="mailto:stillerflaten@icloud.com">Kontakt</a>
       </nav>
     </div>
   </footer>
