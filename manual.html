@@ -147,6 +147,7 @@
           </table>
         </div>
         <p>U6 står ikke i kampreglementet, som begynner på U7. Oppsettet følger det som er vanlig: samme bane som U7–U9, 3 mot 3 uten fast målvakt (en av utespillerne kan stå i mål), og hele rekka byttes hvert 90. sekund.</p>
+        <p>I Norge er måltelleren av som standard til og med U12, fordi det frarådes å telle mål i kamper før U13. Du kan slå den på under Kampoppsett. I U13, og i alle klassene i Sverige, IIHF og Canada, er den på.</p>
         <p>De andre reglementene har sine egne klasser:</p>
         <ul>
           <li><strong>Sverige:</strong> TKH–U9 og U10 (3 + målvakt, minst 15 min, bytte hvert 60. sekund), U11 (frie bytter), U12 (2 x 8 min, flyvende bytter) og U13 (5 + målvakt).</li>
@@ -161,6 +162,7 @@
         <ul>
           <li><strong>Motstander</strong>: navnet vises i kampen, i Arkiv og i PDF-rapporten. Lag dere har spilt mot før, kan velges fra menyen ved feltet, og når du trykker i feltet, vises de siste motstanderne som forslag som filtreres mens du skriver. Sveip til venstre på et forslag for å skjule det fra lista, f.eks. en skrivefeil. Arkivet endres ikke.</li>
           <li><strong>Kamplengde</strong>: fra 5 til 120 minutter.</li>
+          <li><strong>Målteller</strong>: følger klassen du velger (av i U6–U12 med NIHF, ellers på). Du kan slå den av eller på selv. Uten målteller viser kampen ingen stilling, og kampen lagres uten resultat.</li>
         </ul>
 
         <h3>Bytter</h3>
@@ -203,7 +205,7 @@
         <ul>
           <li><strong>Ringen</strong> teller ned til neste bytte. Den blir ravfarget de siste ti sekundene.</li>
           <li><strong>Kampklokka</strong> viser tiden som er igjen. Går kampen over tiden, vises overtiden med pluss foran.</li>
-          <li><strong>Stillingen</strong>: trykk <strong>+</strong> ved lagnavnet ditt eller motstanderen når det blir mål. Har laget fortsatt navnet «Mitt lag», står det «Vi». <strong>−</strong> retter et feiltrykk.</li>
+          <li><strong>Stillingen</strong>: trykk <strong>+</strong> ved lagnavnet ditt eller motstanderen når det blir mål. Har laget fortsatt navnet «Mitt lag», står det «Vi». <strong>−</strong> retter et feiltrykk. Er måltelleren av, vises bare hvem dere spiller mot.</li>
           <li><strong>Ut</strong> og <strong>Inn</strong> viser hvem som byttes neste gang.</li>
         </ul>
 
@@ -249,7 +251,7 @@
     <section class="card m-section" id="laaseskjerm">
       <div>
         <h2>5. Låseskjerm, Dynamic Island og Apple Watch</h2>
-        <p>Mens kampen pågår, viser HockeySub en Live Activity på låseskjermen. Der ser du nedtellingen til neste bytte, hvem som skal inn, hvem som kommer etter og stillingen. Du kan trykke <strong>Bytt nå</strong> rett fra låseskjermen, uten å åpne appen.</p>
+        <p>Mens kampen pågår, viser HockeySub en Live Activity på låseskjermen. Der ser du nedtellingen til neste bytte, hvem som skal inn, hvem som kommer etter og stillingen (når kampen har målteller). Du kan trykke <strong>Bytt nå</strong> rett fra låseskjermen, uten å åpne appen.</p>
         <p>På iPhone med Dynamic Island ser du nedtellingen øverst på skjermen også når du bruker andre apper. Hold fingeren på den for å se mer og få «Bytt nå»-knappen.</p>
         <p>Har du Apple Watch, dukker den samme informasjonen opp i Smart Stack på klokka, med egen «Bytt nå»-knapp.</p>
         <div class="tip"><p><strong>Ser du den ikke?</strong> Gå til Innstillinger &gt; HockeySub på iPhonen og sjekk at Live Activities er slått på.</p></div>
@@ -269,10 +271,10 @@
         <p>Trykk på <strong>arkivboksen</strong> øverst til venstre på Oppsett. Øverst ser du seire, uavgjort, tap og målforskjell for alle kampene. Under ligger kampene, sortert etter måned.</p>
 
         <h3>Kampdetaljer</h3>
-        <p>Trykk på en kamp for å se resultatet, oppsettet og hvor lenge hver spiller var på isen.</p>
+        <p>Trykk på en kamp for å se resultatet, oppsettet og hvor lenge hver spiller var på isen. Kamper spilt uten målteller har ikke noe resultat, så der står det ikke «0–0».</p>
 
         <h3>Rette en kamp</h3>
-        <p>Trykk <strong>Rediger</strong> i kampdetaljene. Der kan du endre motstander (med de samme forslagene som i Kampoppsett), mål for og mål mot, og spilletiden til hver spiller (trykk på spilleren). Trykk <strong>Lagre</strong>.</p>
+        <p>Trykk <strong>Rediger</strong> i kampdetaljene. Der kan du endre motstander (med de samme forslagene som i Kampoppsett), mål for og mål mot, og spilletiden til hver spiller (trykk på spilleren). En kamp spilt uten målteller kan få resultat i ettertid med <strong>Legg til resultat</strong>. Trykk <strong>Lagre</strong>.</p>
 
         <h3>Dele en kamp som PDF</h3>
         <p>Trykk på <strong>dele-knappen</strong> øverst til høyre i kampdetaljene (Del som PDF). Send rapporten med Meldinger, e-post, AirDrop eller lagre den i Filer.</p>
@@ -290,7 +292,7 @@
 
         <h3>Sesongstatistikk</h3>
         <p>Trykk <strong>Sesongstatistikk</strong> øverst i Arkiv. Her ser du spilletiden til hver spiller over alle kampene. Stolpen viser snittet per kamp, så det blir rettferdig selv om noen har vært med på færre kamper. Kamper som målvakt er ikke med i snittet. Trykk på en spiller for å se spilletiden kamp for kamp.</p>
-        <p><strong>Resultater</strong> viser seire, uavgjort og tap, mål for og mål imot (totalt og per kamp) og en graf med målene kamp for kamp. Bare kamper der du har ført mål for begge lag er med.</p>
+        <p><strong>Resultater</strong> viser seire, uavgjort og tap, mål for og mål imot (totalt og per kamp) og en graf med målene kamp for kamp. Bare kamper der du har ført mål for begge lag er med. Kamper uten målteller teller bare med i spilletiden.</p>
         <p><strong>Snitt spilletid</strong> er et søylediagram med snittet per kamp for hver utespiller. Den stiplede streken er lagets snitt, så du ser med én gang om noen får for lite istid. Under står forskjellen mellom spilleren med mest og minst snitt, i minutter og prosent. Jo lavere prosent, jo jevnere er istiden fordelt.</p>
         <p>Under <strong>Periode</strong> velger du <strong>Alle</strong>, <strong>Denne sesongen</strong> (fra 1. august) eller <strong>Velg</strong> for egne datoer. Statistikken kan også deles som PDF med dele-knappen øverst.</p>
         <div class="tip"><p><strong>Pro:</strong> Sesongstatistikk, også som PDF, er en del av <a href="#pro">HockeySub Pro</a>. Arkivet, kampdetaljene og å rette kamper er gratis.</p></div>
