@@ -251,3 +251,14 @@ details p{margin:10px 0 0;color:var(--muted)}
 
 @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto!important;transition:none!important} }
 .contact-card > div:last-child{flex:1;min-width:220px}
+
+/* Språkvalg NO/EN i topplinjen */
+.links a.lang{border:1px solid var(--border);color:var(--text);font-weight:600;font-size:.85rem;margin-left:4px}
+.links a.lang:hover{background:var(--bg-tint)}
+.links{flex-wrap:nowrap}
+@media (max-width:560px){
+  .nav{gap:8px}
+  .links{gap:2px}
+  .links a{padding:6px 7px;font-size:.9rem}
+}
+@media (max-width:360px){ .brand span{display:none} }
