@@ -295,16 +295,15 @@ details p{margin:10px 0 0;color:var(--muted)}
 
 
 /* ---------- Pro-merke og pris ---------- */
+/* PRO-merke: alltid øverst til høyre i kortet */
+.feature{position:relative}
 .pro-tag{
-  display:inline-block;vertical-align:.15em;margin-left:6px;
-  padding:2px 8px;border-radius:999px;
-  font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.5;
-  background:color-mix(in srgb,var(--accent) 14%,transparent);
-  color:var(--accent-strong);
-  border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
+  position:absolute;top:16px;right:16px;
+  padding:4px 11px;border-radius:999px;
+  font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;line-height:1.4;
+  background:linear-gradient(135deg,#2F95AE,#0C4A68);color:#fff;
+  box-shadow:0 2px 6px rgba(12,74,104,.3);
 }
-@media (prefers-color-scheme: dark){ .pro-tag{color:var(--accent-strong);background:color-mix(in srgb,var(--accent) 22%,transparent)} }
-.feature p .pro-tag{margin:0 2px 0 0;vertical-align:.08em}
 .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;max-width:880px;margin:0 auto}
 .pricing .feature ul{margin:10px 0 0;padding-left:1.2em;color:var(--muted)}
 .pricing .feature li{margin:4px 0}
