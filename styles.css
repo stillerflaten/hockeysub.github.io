@@ -262,7 +262,10 @@ details p{margin:10px 0 0;color:var(--muted)}
   .links{gap:2px}
   .links a{padding:6px 7px;font-size:.9rem}
 }
-@media (max-width:430px){ .brand span{display:none} }
+/* På mobil vises bare ikonet; navnet skjules visuelt, men leses fortsatt opp av skjermleser */
+@media (max-width:760px){
+  .brand span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+}
 
 /* ---------- Brukermanual ---------- */
 .manual{max-width:980px}
