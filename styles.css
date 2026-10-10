@@ -253,7 +253,7 @@ details p{margin:10px 0 0;color:var(--muted)}
 .contact-card > div:not(.icon-badge){flex:1;min-width:220px}
 .contact-card > .btn{flex:none}
 
-/* Språkvalg NO/EN i topplinjen */
+/* Språkvalg NO/EN/SV i topplinjen */
 .links a.lang{border:1px solid var(--border);color:var(--text);font-weight:600;font-size:.85rem;margin-left:4px}
 .links a.lang:hover{background:var(--bg-tint)}
 .links{flex-wrap:nowrap}
@@ -261,6 +261,18 @@ details p{margin:10px 0 0;color:var(--muted)}
   .nav{gap:8px}
   .links{gap:2px}
   .links a{padding:6px 7px;font-size:.9rem}
+}
+/* Tre språk (NO/EN/SV): ikonet skal alltid synes, så menyen strammes inn på smale telefoner */
+.brand{flex-shrink:0}
+@media (max-width:420px){
+  .links a{padding:6px 5px;font-size:.86rem}
+  .links a.lang{padding:5px 6px;font-size:.78rem;margin-left:2px}
+}
+@media (max-width:350px){
+  .nav{gap:4px}
+  .links{gap:0}
+  .links a{padding:6px 4px;font-size:.8rem}
+  .links a.lang{padding:4px 5px;font-size:.74rem}
 }
 /* På mobil vises bare ikonet; navnet skjules visuelt, men leses fortsatt opp av skjermleser */
 @media (max-width:760px){
