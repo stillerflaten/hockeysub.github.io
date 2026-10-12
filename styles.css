@@ -345,3 +345,13 @@ details p{margin:10px 0 0;color:var(--muted)}
 .pricing .feature li{margin:4px 0}
 .pricing .price{font-size:1.6rem;font-weight:800;color:var(--accent-strong);margin:2px 0 4px}
 .pricing .feature p.small{margin-top:12px}
+
+/* ---------- «Kommer snart» ---------- */
+/* Funksjoner som er ferdige i appen, men ikke ute i App Store ennå. Fjern merket når versjonen er ute. */
+.soon-tag{
+  display:inline-block;vertical-align:.1em;
+  padding:1px 8px;margin-right:2px;border-radius:999px;
+  font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1.5;
+  color:var(--accent-strong);border:1.5px solid var(--accent);background:var(--bg-tint);
+  white-space:nowrap;
+}
