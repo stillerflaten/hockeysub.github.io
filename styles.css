@@ -248,6 +248,8 @@ details p{margin:10px 0 0;color:var(--muted)}
 .footer-links a{color:var(--muted);text-decoration:none}
 .footer-links a:hover{color:var(--text)}
 .site-footer .muted{margin:6px 0 0;font-size:.9rem}
+.footer-maker{display:flex;align-items:center;gap:8px;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+.footer-maker img{width:20px;height:20px;border-radius:5px;flex:none}
 
 @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto!important;transition:none!important} }
 .contact-card > div:not(.icon-badge){flex:1;min-width:220px}
