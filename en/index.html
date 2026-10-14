@@ -18,7 +18,7 @@
   <link rel="alternate" hreflang="nb" href="https://hockeysub.no/">
   <link rel="alternate" hreflang="en" href="https://hockeysub.no/en/">
   <link rel="alternate" hreflang="sv" href="https://hockeysub.no/sv/">
-  <link rel="stylesheet" href="../styles.css?v=12">
+  <link rel="stylesheet" href="../styles.css?v=13">
   <script>/* Innglidning ved scrolling (reveal.js), aldri ved «Reduser bevegelse». Hvis reveal.js ikke laster, vises alt etter 3 s. */try{if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var r=document.documentElement;r.classList.add('reveal');setTimeout(function(){if(!r.classList.contains('reveal-js'))r.classList.add('reveal-done')},3000)}}catch(e){}</script>
   <script>/* Velkomstanimasjon: én gang per besøk, aldri ved «Reduser bevegelse» */try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('hs-hero')){document.documentElement.classList.add('hero-anim');sessionStorage.setItem('hs-hero','1')}}catch(e){}</script>
 </head>
@@ -144,7 +144,7 @@
 
     <!-- ===== Istid-kalkulator (calc.js) ===== -->
     <section class="section tint" id="istid">
-      <div class="container calc" data-calc data-default="nihf">
+      <div class="container calc" data-calc data-default="canada">
         <div class="calc-intro" data-reveal>
           <h2>How much ice time does each child get?</h2>
           <p>Pick an age group and how many skaters you have, and see how much ice time each child gets when the time is shared equally. That is what HockeySub keeps track of for you during the game.</p>
@@ -152,13 +152,23 @@
             <div class="calc-field">
               <span class="calc-label" id="calc-rules-l">Rules</span>
               <div class="seg" role="radiogroup" aria-labelledby="calc-rules-l">
+                <button type="button" role="radio" data-rules="canada">Canada</button>
                 <button type="button" role="radio" data-rules="nihf">Norway</button>
                 <button type="button" role="radio" data-rules="sweden">Sweden</button>
+                <button type="button" role="radio" data-rules="iihf">IIHF</button>
               </div>
             </div>
             <div class="calc-field">
               <span class="calc-label" id="calc-class-l">Age group</span>
               <div class="chips" role="radiogroup" aria-labelledby="calc-class-l" data-classes></div>
+            </div>
+            <div class="calc-field">
+              <span class="calc-label" id="calc-len-l">Game length</span>
+              <div class="stepper">
+                <button type="button" data-lenstep="-5" aria-label="5 min shorter">−</button>
+                <output aria-labelledby="calc-len-l" aria-live="polite" data-length>15 min</output>
+                <button type="button" data-lenstep="5" aria-label="5 min longer">+</button>
+              </div>
             </div>
             <div class="calc-field">
               <span class="calc-label" id="calc-players-l">Skaters</span>
@@ -171,12 +181,13 @@
           </div>
         </div>
         <div class="calc-result" data-reveal aria-live="polite">
-          <p class="calc-big"><span data-time>4 min 30 s</span> <small>per player</small></p>
-          <p class="calc-line" data-line>The game is 15 min, with 3 skaters on the ice and 7 on the bench.</p>
-          <p class="calc-line" data-shift>A change every 90 seconds. Each player goes on about 3 times.</p>
+          <p class="calc-big"><span data-time>16 min 00 s</span> <small>per player</small></p>
+          <p class="calc-line" data-line>The game is 40 min, with 4 skaters on the ice and 6 on the bench.</p>
+          <p class="calc-line" data-shift>A change every 2 minutes. Each player goes on about 8 times.</p>
           <div class="rink" data-rink aria-hidden="true"></div>
           <p class="calc-legend"><span class="dot on"></span>On the ice <span class="dot"></span>On the bench</p>
           <p class="calc-note" data-goalie>The goalie comes on top.</p>
+          <p class="calc-note" data-open>The rules don’t set a game length, so pick your own.</p>
         </div>
       </div>
     </section>
@@ -332,7 +343,7 @@
   </footer>
   <script src="../lang-menu.js?v=1" defer></script>
   <script src="../hero.js?v=1" defer></script>
-  <script src="../calc.js?v=1" defer></script>
+  <script src="../calc.js?v=2" defer></script>
   <script src="../reveal.js?v=1" defer></script>
   <script data-goatcounter="https://hockeysub.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

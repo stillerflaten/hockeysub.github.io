@@ -18,7 +18,7 @@
   <link rel="alternate" hreflang="nb" href="https://hockeysub.no/">
   <link rel="alternate" hreflang="en" href="https://hockeysub.no/en/">
   <link rel="alternate" hreflang="sv" href="https://hockeysub.no/sv/">
-  <link rel="stylesheet" href="../styles.css?v=12">
+  <link rel="stylesheet" href="../styles.css?v=13">
   <script>/* Innglidning ved scrolling (reveal.js), aldri ved «Reduser bevegelse». Hvis reveal.js ikke laster, vises alt etter 3 s. */try{if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var r=document.documentElement;r.classList.add('reveal');setTimeout(function(){if(!r.classList.contains('reveal-js'))r.classList.add('reveal-done')},3000)}}catch(e){}</script>
   <script>/* Velkomstanimasjon: én gang per besøk, aldri ved «Reduser bevegelse» */try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('hs-hero')){document.documentElement.classList.add('hero-anim');sessionStorage.setItem('hs-hero','1')}}catch(e){}</script>
 </head>
@@ -152,13 +152,23 @@
             <div class="calc-field">
               <span class="calc-label" id="calc-rules-l">Regelverk</span>
               <div class="seg" role="radiogroup" aria-labelledby="calc-rules-l">
-                <button type="button" role="radio" data-rules="nihf">Norge</button>
                 <button type="button" role="radio" data-rules="sweden">Sverige</button>
+                <button type="button" role="radio" data-rules="nihf">Norge</button>
+                <button type="button" role="radio" data-rules="canada">Kanada</button>
+                <button type="button" role="radio" data-rules="iihf">IIHF</button>
               </div>
             </div>
             <div class="calc-field">
               <span class="calc-label" id="calc-class-l">Åldersklass</span>
               <div class="chips" role="radiogroup" aria-labelledby="calc-class-l" data-classes></div>
+            </div>
+            <div class="calc-field">
+              <span class="calc-label" id="calc-len-l">Matchlängd</span>
+              <div class="stepper">
+                <button type="button" data-lenstep="-5" aria-label="5 min kortare">−</button>
+                <output aria-labelledby="calc-len-l" aria-live="polite" data-length>15 min</output>
+                <button type="button" data-lenstep="5" aria-label="5 min längre">+</button>
+              </div>
             </div>
             <div class="calc-field">
               <span class="calc-label" id="calc-players-l">Utespelare</span>
@@ -177,6 +187,7 @@
           <div class="rink" data-rink aria-hidden="true"></div>
           <p class="calc-legend"><span class="dot on"></span>På isen <span class="dot"></span>På bänken</p>
           <p class="calc-note" data-goalie>Målvakten kommer till.</p>
+          <p class="calc-note" data-open hidden></p>
         </div>
       </div>
     </section>
@@ -333,7 +344,7 @@
   </footer>
   <script src="../lang-menu.js?v=1" defer></script>
   <script src="../hero.js?v=1" defer></script>
-  <script src="../calc.js?v=1" defer></script>
+  <script src="../calc.js?v=2" defer></script>
   <script src="../reveal.js?v=1" defer></script>
   <script data-goatcounter="https://hockeysub.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

@@ -450,7 +450,7 @@ details p{margin:10px 0 0;color:var(--muted)}
 .stepper output{font-size:2rem;font-weight:800;min-width:2ch;text-align:center;font-variant-numeric:tabular-nums}
 .calc-result{background:var(--card);border-radius:32px;padding:clamp(28px,4vw,44px)}
 .calc-big{margin:0 0 14px;line-height:1}
-.calc-big span{display:inline-block;font-size:clamp(2.75rem,6vw,4.5rem);font-weight:800;letter-spacing:-.035em;color:var(--accent-strong);font-variant-numeric:tabular-nums}
+.calc-big span{display:inline-block;white-space:nowrap;font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-.035em;color:var(--accent-strong);font-variant-numeric:tabular-nums}
 .calc-big small{display:block;margin-top:8px;font-size:1.1rem;font-weight:600;color:var(--muted)}
 .calc-line{margin:0 0 6px}
 .rink{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 12px}
