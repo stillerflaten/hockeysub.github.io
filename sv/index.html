@@ -18,7 +18,8 @@
   <link rel="alternate" hreflang="nb" href="https://hockeysub.no/">
   <link rel="alternate" hreflang="en" href="https://hockeysub.no/en/">
   <link rel="alternate" hreflang="sv" href="https://hockeysub.no/sv/">
-  <link rel="stylesheet" href="../styles.css?v=9">
+  <link rel="stylesheet" href="../styles.css?v=10">
+  <script>/* Velkomstanimasjon: én gang per besøk, aldri ved «Reduser bevegelse» */try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('hs-hero')){document.documentElement.classList.add('hero-anim');sessionStorage.setItem('hs-hero','1')}}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#innhold">Hoppa till innehållet</a>
@@ -65,6 +66,14 @@
         </div>
         <div class="hero-phone">
           <div class="phone">
+            <div class="hero-clock" aria-hidden="true" data-due="Byt!" data-until="till byte">
+              <div class="ring">
+                <svg viewBox="0 0 100 100"><circle class="trk" cx="50" cy="50" r="42"/><circle class="arc" cx="50" cy="50" r="42"/></svg>
+                <div class="num"><b>0:05</b><small>till byte</small></div>
+              </div>
+              <div class="swap"><span class="k ut">Ut</span><span class="v">Ingrid, Filip, Sofie</span><span class="k inn">In</span><span class="v">Oskar, Ella, Lukas</span></div>
+              <span class="bytt">Byt nu</span>
+            </div>
             <div class="screen">
               <img src="../bilder/skjermbilder/web/02-kamp.webp?v=2" width="660" height="1434" alt="HockeySub under matchen: klocka, ställning, vilka som ska ut och in, och istid för varje spelare">
             </div>
@@ -292,6 +301,7 @@
     </div>
   </footer>
   <script src="../lang-menu.js?v=1" defer></script>
+  <script src="../hero.js?v=1" defer></script>
   <script data-goatcounter="https://hockeysub.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
