@@ -116,7 +116,7 @@ p{margin:0 0 1em}
 .hero-text{padding-bottom:88px}
 .hero h1{font-size:clamp(3rem,7.4vw,6rem);font-weight:800;line-height:.98;letter-spacing:-.035em;margin-bottom:24px;max-width:9.5em;text-wrap:balance}
 .hero .lead{font-size:clamp(1.1rem,1.6vw,1.3rem);max-width:36ch;margin-bottom:32px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .hero-note{margin-top:18px;font-size:.95rem;opacity:.85}
 .hero-phone{align-self:end;display:flex;justify-content:center}
 .hero-phone .phone{width:min(340px,90%);margin-bottom:-110px}
@@ -477,3 +477,10 @@ details p{margin:10px 0 0;color:var(--muted)}
 .reveal [data-reveal].in:not(.settled) > :nth-child(3){transition-delay:.16s}
 .reveal [data-reveal].in:not(.settled) > :nth-child(4){transition-delay:.24s}
 @media (prefers-reduced-motion: reduce){ .calc.bump .calc-big span{animation:none} }
+
+/* ---------- Apples offisielle «Last ned på App Store»-merke ----------
+   Filene er Apples egne (svart utgave, NO/SE/US). Ikke endre farge eller form på merket. */
+.store-badge{display:inline-flex;border-radius:10px;transition:transform .15s ease}
+.store-badge:hover{transform:translateY(-1px)}
+.store-badge:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.store-badge img{height:54px;width:auto}
